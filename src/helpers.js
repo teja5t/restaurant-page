@@ -23,16 +23,20 @@ function addFlavor(image, name, description) {
     flavorImage.classList.add('flavor-image');
     container.appendChild(flavorImage);
 
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('flavor-text');
+
     const flavorName = document.createElement('h1');
     flavorName.textContent = name;
     flavorName.classList.add('flavor-name');
-    container.appendChild(flavorName);
+    textContainer.appendChild(flavorName);
 
     const flavorDescription = document.createElement('p');
     flavorDescription.textContent = description;
     flavorDescription.classList.add('flavor-description');
-    container.appendChild(flavorDescription);
+    textContainer.appendChild(flavorDescription);
 
+    container.appendChild(textContainer);
     content.appendChild(container);
 }
 
