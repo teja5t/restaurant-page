@@ -2,6 +2,8 @@ import { clearContent, addElement } from './helpers';
 
 function makeAbout() {
     clearContent();
+    document.body.classList.add('about');
+    document.querySelector('#about').classList.add('selected');
     addElement('h1', 'our-story', "Our Story");
     addElement('p', 'story', `Macarons by Tejas started as a delicious accident. Back in high school, Tejas discovered the joy of making macarons during his tutorial period. While most students were catching up on homework or chatting with friends, Tejas was whisking egg whites and piping batter onto baking sheets.
         The real twist? Tejas quickly realized that his teachers had a soft spot for his macarons. Running late to class? No problem! A box of freshly made macarons was the perfect "bribe" to keep the tardy slips at bay. Soon, his teachers started "conveniently" forgetting to mark him late, and some even placed special flavor requests.

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+nav button {
+    width: max(70px, 10vw);
+    height: min(100px, 10vh);
+    background-color: rgb(0, 0, 0, 80%);
+    color: white;
+    outline: solid 2px white;
+    margin: 0px 10px 0px 10px;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 20px;
+}
+
+button.selected {
+    outline: solid 5px white;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: bold;
+    margin: 10px;
+}
+
+nav {
+    text-align: right;
+}
+
+body {
+    background-image: url('./images/macaron-background.jpg');
+    background-size: 3000px;
+    background-position: -400px -400px;
+    height: 100%;
+}
+
+#content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 80%);
+    border-top: 2px solid white; /* Adds a solid white line at the top */
+    border-bottom: 2px solid white; /* Adds a solid white line at the bottom */
+}
+
+.home #content,
+.about #content {
+    margin-top: 10vh;
+}
+
+.menu #content {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+#title,
+#our-story {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+#description,
+#story {
+    margin-bottom: 20vh;
+    width: max(50vw, 300px);
+}
+
+#menu-title {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.flavor {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: max(300px, 30vw);
+}
+
+.flavor-description {
+    width: max(150px, 20vw);
+    display: flex;
+}
+
+.flavor-description * {
+    text-align: center;
+}
+
+.flavor-image {
+    width: 100px;
+    height: 100px;
+    outline: solid 2px white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.flavor:last-child {
+    margin-bottom: 20px;
+}
+
+#Blueberry-Lemon > .flavor-image {
+    background-image: url(./images/blueberry-lemon.jpeg);
+    background-size: 400px;
+    background-position: -200px, -200px;
+}
+
+#Matcha > .flavor-image {
+    background-image: url(./images/matcha.jpeg);
+    background-size: 150px;
+    background-position: 100px;
+}
+
+#Oreo > .flavor-image {
+    background-image: url(./images/oreo.jpeg);
+    background-size: 200px;
+    background-position: 140px 160px;
+}
+
+#Strawberry-Cheesecake > .flavor-image {
+    background-image: url(./images/strawberry-cheesecake.jpeg);
+    background-size: 300px;
+    background-position: 170px 170px;
+}
+
+#Blackberry-Lavender > .flavor-image {
+    background-image: url(./images/blackberry-lavender.jpeg);
+    background-size: 200px;
+    background-position: 180px 190px;
+}
+
+#Vanilla-Bean > .flavor-image {
+    background-image: url(./images/vanilla-bean.jpeg);
+    background-size: 400px;
+    background-position: 260px 250px;
+}

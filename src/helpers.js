@@ -1,6 +1,8 @@
 const content = document.querySelector("#content");
 
 function clearContent() {
+    document.body.setAttribute('class', '');
+    document.querySelectorAll('button').forEach((element) => element.setAttribute('class', ''));
     content.textContent = "";
 }
 
@@ -17,16 +19,18 @@ function addFlavor(image, name, description) {
     container.classList.add('flavor');
     container.id = name.split(' ').join('-');
 
-    const flavorImage = document.createElement('img');
+    /*const flavorImage = document.createElement('img');
     flavorImage.src = image;
-    flavorImage.alt = name;
+    flavorImage.alt = name;*/
+
+    const flavorImage = document.createElement('div');
     flavorImage.classList.add('flavor-image');
     container.appendChild(flavorImage);
 
     const textContainer = document.createElement('div');
     textContainer.classList.add('flavor-text');
 
-    const flavorName = document.createElement('h1');
+    const flavorName = document.createElement('h2');
     flavorName.textContent = name;
     flavorName.classList.add('flavor-name');
     textContainer.appendChild(flavorName);

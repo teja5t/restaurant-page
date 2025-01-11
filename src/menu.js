@@ -9,6 +9,8 @@ import vanillaBean from "./images/vanilla-bean.jpeg";
 
 function makeMenu() {
     clearContent();
+    document.body.classList.add('menu');
+    document.querySelector('#menu').classList.add('selected');
     addElement('h1', 'menu-title', "Menu");
     addFlavor(blueberryLemon, "Blueberry Lemon", "A perfect balance of tangy lemon and sweet blueberry, this macaron is a burst of freshness in every bite.");
     addFlavor(matcha, "Matcha", "Earthy and aromatic, our matcha macaron is a delight for green tea lovers, blending authentic matcha flavor with a hint of sweetness.");
