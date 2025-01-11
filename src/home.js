@@ -1,14 +1,9 @@
+import { clearContent, addElement } from './helpers';
+
 function makeHome() {
-    const title = document.createElement('h1');
-    title.textContent = 'Macarons by Tejas';
-
-    const description = document.createElement('p');
-    description.textContent = 'The finest macarons delivered straight to your door.'
-
-    const content = document.querySelector("#content");
-    content.textContent = '';
-    content.appendChild(title);
-    content.appendChild(description);
+    clearContent();
+    addElement('h1', 'title', "Macarons by Tejas");
+    addElement('p', 'description', "Welcome to Macarons by Tejas! Indulge in the delicate artistry of our handcrafted macarons. With vibrant colors, exquisite flavors, and a melt-in-your-mouth texture, our macarons are perfect for any occasion. Whether you're celebrating a milestone, giving a thoughtful gift, or simply treating yourself, Macarons by Tejas is here to make every moment sweeter.")
 }
 
 export { makeHome };
